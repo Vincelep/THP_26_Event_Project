@@ -1,24 +1,22 @@
-# README
+# 26ème jour - The Event Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 💎 Qu'est-ce donc ?
+Une app **Ruby On Rails** 
 
-Things you may want to cover:
+## ⚙ Installation
+1. Clone ce repo (ou download-le)
+2. Place-toi dans le dossier et va dans ton magnifique terminal 😍 :
+3. `$ bundle install` 
+4. `$ rails db:create`
+5. `$ rails db:migrate` 
+6. `$ rails db:seed`
+7. `$ rails server`
 
-* Ruby version
+## 🗺 Le site en ligne
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+![gossip](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.memecdn.com%2FThe-gossip-turkey_c_128800.jpg&f=1)
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Programme Ruby 💎 réalisé par **Claudia Partonnau** dans le cadre de la formation THP – The Hacking Project*.
