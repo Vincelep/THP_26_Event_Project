@@ -16,10 +16,17 @@ RSpec.describe Event, type: :model do
   describe "#duration" do
     # it { expect(@event).to validate_presence_of(:duration) }
     it { expect(@event.duration % 5).to be( 0 ) }
+    it { is_expected.to allow_value(25).for(:duration) }
+    it { is_expected.to_not allow_value(2.5).for(:duration) }
+    it { is_expected.to_not allow_value(-5).for(:duration) }
+    it { is_expected.to_not allow_value(0).for(:duration) }
   end
 
   describe "#title" do
     it { expect(@event).to validate_presence_of(:title) }
+    it { is_expected.to allow_value("hello").for(:duration) }
+    it { is_expected.to_not allow_value("aaaa").for(:duration) }
+    it { is_expected.to_not allow_value("0123456789" * 10).for(:duration) }
   end
 
   describe "#description" do

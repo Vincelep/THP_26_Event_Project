@@ -17,7 +17,7 @@ Attendance.destroy_all
                first_name: Faker::Name.first_name,
                last_name: Faker::Name.last_name,
                description: Faker::ChuckNorris.fact,
-               email: Faker::Internet.email,
+               email: "clodiap@yopmail.com",
                encrypted_password: Faker::Lorem.characters(10) )
 end
 
