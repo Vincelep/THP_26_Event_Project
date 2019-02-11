@@ -13,10 +13,11 @@ Une app **Ruby On Rails** de création d'événements du style d'Eventbrite
 
 ## Tester les associations
 Pour tester les associations tu peux taper dans ton terminal :
-`$ rails console`
-`$ Attendance.first.event.administrator.first_name` (va afficher le prénom de l'administrateur du premier event)
-`$ Event.first.attendees` (va afficher les users qui participent au premier événement)
-`$ User.first.events` (va afficher les événements créés par le 1er user, s'il y en a)
+1. `$ rails console`
+2. `$ Attendance.first.event.administrator.first_name` (va afficher le prénom de l'administrateur du premier event)
+3. `$ Event.first.attendees` (va afficher les users qui participent au premier événement)
+4. `$ User.first.events` (va afficher les événements créés par le 1er user, s'il y en a)
+
 
 
 

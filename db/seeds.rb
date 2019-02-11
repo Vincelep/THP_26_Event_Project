@@ -25,7 +25,7 @@ i = 1
 20.times do |event|
   Event.create!(
                 title: "Mon super event #{i}",
-                description: Faker::Company.bs,
+                description: Faker::Lorem.characters(25),
                 price: rand(1...1000),
                 location: Faker::Address.city,
                 start_date: Faker::Date.forward(23) ,
