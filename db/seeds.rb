@@ -21,15 +21,17 @@ Attendance.destroy_all
                encrypted_password: Faker::Lorem.characters(10) )
 end
 
+i = 1
 20.times do |event|
   Event.create!(
-                title: Faker::Lorem.characters(10),
+                title: "Mon super event #{i}",
                 description: Faker::Company.bs,
                 price: rand(1...1000),
                 location: Faker::Address.city,
                 start_date: Faker::Date.forward(23) ,
                 duration: 5 * rand(1..120),
                 administrator_id: User.all.sample.id)
+  i+=1
 end
 
 50.times do |attendance|

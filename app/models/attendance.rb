@@ -1,12 +1,11 @@
 class Attendance < ApplicationRecord
-  after_create :welcome_send
+  after_create :newattendee_send
 
-  # has_many :administrators, foreign_key: :administrator_id, class_name: 'User'
   belongs_to :attendee, class_name: 'User'
   belongs_to :event
 
 
-    def welcome_send
-      UserMailer.welcome_email().deliver_now
+    def newattendee_send #Quand un participant participe à un événement, envoie un email au créateur de l'événement
+      AdminMailer.newattendee_email(self).deliver_now
     end
 end
