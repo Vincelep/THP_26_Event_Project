@@ -17,11 +17,13 @@ Pour tester les associations tu peux taper dans ton terminal :
 2. `$ Attendance.first.event.administrator.first_name` (va afficher le prénom de l'administrateur du premier event)
 3. `$ Event.first.attendees` (va afficher les users qui participent au premier événement)
 4. `$ User.first.events` (va afficher les événements créés par le 1er user, s'il y en a)
+5. `$ Attendance.create(stripe_customer_id:"453122334", event_id:1, attendee_id:3)` (pour créer une nouvelle participation à un event)
 
 
+Tu peux aller voir les emails envoyés ici : <http://www.yopmail.com?clodiap> (ceux qui ont été créés lors du seed)
 
 
-![gossip](https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimg.memecdn.com%2FThe-gossip-turkey_c_128800.jpg&f=1)
+![event](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F81%2Fe2%2F4c%2F81e24c8567ce0530fa3fb42f3bcc5ceb--teaching-memes-work-memes.jpg&f=1)
 
 
 *Programme Ruby 💎 réalisé par **Claudia Partonnau** dans le cadre de la formation THP – The Hacking Project*.

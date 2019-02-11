@@ -34,7 +34,7 @@ i = 1
   i+=1
 end
 
-50.times do |attendance|
+20.times do |attendance|
   Attendance.create!(
                      stripe_customer_id: Faker::Lorem.characters(10),
                      event_id: Event.all.sample.id,
